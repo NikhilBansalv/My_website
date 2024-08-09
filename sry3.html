@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Last Sorry</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            text-align: center;
+            background-color: #ffe4e1;
+        }
+        .button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .floating {
+            position: relative;
+            transition: transform 0.4s ease;
+        }
+    </style>
+</head>
+<body>
+    <img src="bubu5.gif" alt="Sorry GIF" class="gif">
+    <h1>I'm Truly Sorry</h1>
+    <p>Please yaar maaf kardena...</p>
+    <button class="button" onclick="handleClick('yes')">Yes</button>
+    <button class="button floating" id="noButton">No</button>
+
+    <script>
+        document.getElementById('noButton').addEventListener('mouseover', function() {
+            this.style.transform = `translate(${Math.random() * 200 - 100}px, ${Math.random() * 200 - 100}px)`;
+        });
+
+        function handleClick(response) {
+            if (response === 'yes') {
+                window.location.href = 'yes.html';
+            }
+        }
+    </script>
+</body>
+</html>

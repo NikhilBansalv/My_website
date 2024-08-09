@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorry Once More</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            text-align: center;
+            background-color: #ffe4e1; /* Light pink background */
+
+        }
+        .button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <img src="bubu4.gif" alt="Sorry GIF" class="gif">
+    <h1>I'm Really Sorry</h1>
+    <p>Huhh tu abhi tak mujhse naraz hai😔😔😭</p>
+    <button class="button" onclick="handleClick('yes')">Yes</button>
+    <button class="button" onclick="handleClick('no')">No</button>
+
+    <script>
+        function handleClick(response) {
+            if (response === 'yes') {
+                window.location.href = 'yes.html';
+            } else {
+                window.location.href = 'sry3.html';
+            }
+        }
+    </script>
+</body>
+</html>
